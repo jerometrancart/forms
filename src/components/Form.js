@@ -1,7 +1,18 @@
 import { Component } from 'react';
-import Headlight from './Headlight';
+import styled from 'styled-components';
 import '../myCss.css';
-import styles from '../myCss.module.css';
+
+
+const Title = styled.h1`
+    color: red;
+    font-size: 80px;
+`
+
+const Button = styled.button`
+    background: black;
+    color: #FFF
+    font-weight: bold`
+
 
 
 
@@ -12,10 +23,10 @@ class Form extends Component {
         
         return(
             <div>
-                <h1 className={styles.green}>Commentaire 1</h1>
-                <Headlight />
+                <Title>Commentaire 1</Title>
                 
-                <button>Valider</button>
+                
+                <Button>Valider</Button>
             </div>
         )
     }
